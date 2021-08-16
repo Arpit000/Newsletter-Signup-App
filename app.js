@@ -33,8 +33,8 @@ app.post("/", function(req, res){
     const url = "https://us5.api.mailchimp.com/3.0/lists/3dffd5aff4";
 
     const options = {
-      method: "POST",
-      auth: "arpit1:15e64298cb3b98971ddadd5586357c08-us5"
+      method: "POST",                                                         
+      auth: "arpit1:YOUR_API_KEY"
     };
 
     const request = https.request(url, options, function (response) {
@@ -60,9 +60,3 @@ app.listen(process.env.PORT || 3000, () => {
     console.log("Server has been set to port 3000");
 });
 
-
-// api key
-// 15e64298cb3b98971ddadd5586357c08-us5
-
-// list id
-// 3dffd5aff4
